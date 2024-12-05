@@ -6,48 +6,30 @@ body {
 
 header {
   background-color: #f37021;
-  color: white;
   text-align: center;
-  padding: 15px;
-  position: relative;
+  padding: 20px;
 }
 
 .poke-logo {
   width: 200px;
-
 }
 
-#app {
+.controls {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-
-  padding: 20px;
+  gap: 10px;
+  margin: 20px 0;
 }
 
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.error-message {
-  color: #d32f2f;
-  font-weight: bold;
-}
-
-#searchInput {
-
-  padding: 8px;
-  margin: 0 8px;
+input {
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  width: 200px;
 }
 
-#searchBtn, #prevBtn, #nextBtn, #resetBtn {
-  margin: 10px 0;
-  padding: 10px;
+button {
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -63,6 +45,34 @@ header {
   color: white;
 }
 
-#searchBtn:hover, #prevBtn:hover, #nextBtn:hover, #resetBtn:hover {
+button:hover {
   opacity: 0.8;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0 0;
 }
