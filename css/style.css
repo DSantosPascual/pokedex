@@ -6,30 +6,87 @@ body {
 
 header {
   background-color: #f37021;
+  color: white;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  position: relative;
 }
 
 .poke-logo {
   width: 200px;
+
 }
 
-.controls {
+#app {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  padding: 20px;
 }
 
-input {
+.pokemon-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
   padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pokemon-card:hover .pokemon-image {
+  transform: rotateY(180deg);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-link {
+  margin: 0 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: #f37021;
+  color: white;
+  border: 1px solid #f37021;
+  border-radius: 5px;
+}
+
+.page-link:hover {
+  background-color: #fff;
+  color: #f37021;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+#searchInput {
+
+  padding: 8px;
+  margin: 0 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  width: 200px;
 }
 
-button {
-  padding: 10px 20px;
+#searchBtn, #prevBtn, #nextBtn, #resetBtn {
+  margin: 10px 0;
+  padding: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -45,34 +102,6 @@ button {
   color: white;
 }
 
-button:hover {
+#searchBtn:hover, #prevBtn:hover, #nextBtn:hover, #resetBtn:hover {
   opacity: 0.8;
-}
-
-#app {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  width: 150px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-  width: 100px;
-  height: 100px;
-}
-
-.card h3 {
-  font-size: 16px;
-  margin: 10px 0 0;
 }
